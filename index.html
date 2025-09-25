@@ -6,35 +6,47 @@
   <title>Freelance Time Tracking — Installed</title>
   <meta name="description" content="Welcome page for the Freelance Time Tracking extension">
   <style>
-    /* Базовая типографика и фон как у примера */
-    :root { --wrap: 1040px; --text: 720px; }
+    /* Базовый стиль как у примера */
+    :root { --page: 1040px; --text: 720px; }
     html,body{margin:0;padding:0}
     body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1.6;
-      color:#111;
-      background:#f3f4f6; /* светло-серый фон страницы */
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      line-height:1.65;
+      color:#111827;               /* чуть темнее текст */
+      background:#f3f4f6;          /* светло-серый фон */
     }
 
     /* Контейнер и отступы */
-    .wrap{max-width:var(--wrap); margin:56px auto; padding:0 20px;}
+    .wrap{max-width:var(--page); margin:72px auto; padding:0 20px;}
 
-    /* Заголовок и параграфы — по центру */
+    /* Заголовок — крупный и жирный, по центру */
     h1{
-      font-size:44px; font-weight:800; margin:0 0 16px; text-align:center;
-    }
-    .lead{
-      max-width:var(--text); margin:0 auto 28px; text-align:center;
-      font-size:18px; color:#1f2937;
+      margin:0 0 18px;
+      font-size:48px;              /* как в образце */
+      font-weight:800;
+      text-align:center;
     }
 
-    /* Скриншоты — большие, с лёгкой рамкой и тенью */
-    .screenshot{
-      display:block; margin:28px auto 64px;
-      width:100%; max-width:var(--wrap);
-      border:1px solid #e5e7eb; border-radius:14px;
-      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    /* Подписи под заголовком — центрированные, узкая ширина */
+    .lead{
+      max-width:var(--text);
+      margin:0 auto 28px;
+      text-align:center;
+      font-size:18px;
+      color:#111;                  /* чёрный, как у примера */
+    }
+
+    /* Скриншоты — большие, с рамкой, скруглением и тенью */
+    .shot{
+      display:block;
+      width:100%;
+      max-width:var(--page);
       height:auto;
+      margin:28px auto 72px;
+      border:1px solid #e5e7eb;
+      border-radius:14px;
+      box-shadow:0 12px 28px rgba(0,0,0,.08);
+      background:#fff;
     }
   </style>
 </head>
@@ -43,14 +55,15 @@
     <h1>Freelance Time Tracking Installed</h1>
 
     <p class="lead">
-      Click the puzzle piece (1) in the top right of your browser. Then, click the little pin (2) next to the extension:
+      Click the puzzle piece (1) in the top right of your browser.<br>
+      Then, click the little pin (2) next to the extension:
     </p>
-    <img class="screenshot" src="img/step1.png" alt="Click the puzzle icon and then the pin next to the extension">
+    <img class="shot" src="img/step1.png" alt="Click the puzzle icon, then the pin next to the extension">
 
     <p class="lead">
       Open the extension (3) on any page to start using Freelance Time Tracking:
     </p>
-    <img class="screenshot" src="img/step2.png" alt="Click the extension icon on any page to open it">
+    <img class="shot" src="img/step2.png" alt="Open the extension on any page">
   </main>
 </body>
 </html>
