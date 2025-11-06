@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Uninstall Feedback — Freelance Time Tracking</title>
   <style>
     body {
@@ -19,8 +19,8 @@
 
     main {
       width: 100%;
-      max-width: 900px;
-      padding: 60px 20px;
+      max-width: 800px;
+      padding: 80px 20px;
       box-sizing: border-box;
       text-align: center;
     }
@@ -28,33 +28,54 @@
     h1 {
       font-size: 2em;
       font-weight: 600;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #555;
       margin-bottom: 40px;
     }
 
-    .iframe-wrapper {
-      position: relative;
-      width: 100%;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    a.button {
+      display: inline-block;
+      background-color: #4c48e5;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.1s ease;
     }
 
-    iframe {
-      width: 100%;
-      height: 720px;
-      border: none;
-      border-radius: 0;
-      mix-blend-mode: multiply;
-      filter: brightness(0.98);
-      background: transparent;
+    a.button:hover {
+      background-color: #3b39c9;
+      transform: translateY(-1px);
+    }
+
+    a.button:active {
+      transform: translateY(0);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #aaa;
     }
 
     @media (max-width: 768px) {
       main {
-        padding: 40px 10px;
+        padding: 60px 16px;
       }
-      iframe {
-        height: 850px;
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
       }
     }
   </style>
@@ -62,12 +83,15 @@
 <body>
   <main>
     <h1>We’re sorry to see you go.</h1>
-    <div class="iframe-wrapper">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfKNMC9SdWXZFExGtEAaix4QI7_tydLJq3fCcBpMf_mKV1PnQ/viewform?embedded=true"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <p>Please share your feedback — it only takes a few seconds.</p>
+    <a 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfKNMC9SdWXZFExGtEAaix4QI7_tydLJq3fCcBpMf_mKV1PnQ/viewform" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="button">
+      Open Feedback Form
+    </a>
+    <footer>Thank you for helping us improve Freelance Time Tracking.</footer>
   </main>
 </body>
 </html>
